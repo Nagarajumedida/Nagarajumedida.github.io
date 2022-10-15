@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
+
 </head>
 <body>
-    <h1>GIT HUB PORTFOLIO</h1>
+    <div id="header">
+        <div class="container">
+           <nav>
+               <img src="" alt="" class="logo">
+               <ul id="sidemenu">
+                   <li><a href="#header">Home</a> </li>
+                   <li><a href="#about">About</a> </li>
+                   <li><a href="#services">Services</a> </li>
+                   <li><a href="#portfolio">Portfolio</a> </li>
+                   <li><a href="#contact">Contact</a> </li>
+                   <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
+               </ul>
+
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+           </nav>
+           <div class="header-text">
+                   <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
+                   <p>Fullstack Developer</p>
+
+           </div>
+        </div>
+</div>
 </body>
 </html>
+<script>
+     var sidiemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
