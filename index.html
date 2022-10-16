@@ -7,39 +7,226 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
-
 </head>
 <body>
     <div id="header">
-        <div class="container">
-           <nav>
-               <img src="" alt="" class="logo">
-               <ul id="sidemenu">
-                   <li><a href="#header">Home</a> </li>
-                   <li><a href="#about">About</a> </li>
-                   <li><a href="#services">Services</a> </li>
-                   <li><a href="#portfolio">Portfolio</a> </li>
-                   <li><a href="#contact">Contact</a> </li>
-                   <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
-               </ul>
+                 <div class="container">
+                    <nav>   
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a> </li>
+                            <li><a href="#about">About</a> </li>
+                            <li><a href="#services">Services</a> </li>
+                            <li><a href="#portfolio">Projects</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
+                            <!-- <li><a href="#resume">Resume</a> </li> -->
 
-               <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
-           </nav>
-           <div class="header-text">
-                   <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
-                   <p>Fullstack Developer</p>
+                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
+                        </ul>
 
-           </div>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+                    </nav>
+                    <div class="header-text">
+                            <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
+                            <p>Fullstack Developer</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1iQhFO-vgQEBTAMH4I7u4ijbo78xr-j_A/view?usp=sharing"  class="btn btn2">Resume</a>
+
+                 </div>
+    </div>
+     <!-- ABOUT -->
+    <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/raju.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me</h1>
+                        <p class="intro">To land on a challenging role where i can use my skills to
+                            help organisation and self growth. Skilled frontend
+                            developer, interested in obtaining a Software Developer
+                            position to work on enhancing the product experience.</p>
+                   
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('contact')">Contact</p>
+
+                    </div>
+
+                  
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <!-- <li><span>UI/UX</span> <br> Designing Web/App interfaces</li> -->
+                            <li><span id="experience-1" >Frontend Development</span> <br><span id="experience-2">HTML5 | JavaScript | Chakra-Ui | CSS3 | Bootstrap | React</span> </li>
+                            <li><span id="experience-1">Backend Development</span> <br>  <span id="experience-2">Node JS | MOngoDB | Express | React | Redux</span></li>
+                
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>  <span id="experience-1">NDT Technician</span> <br> <span id="experience-2">YASREF Ltd. - Yanbu(Saudi Arabia)</span> <br> 01/2020 - 03/2020<br></li>
+                            <li><span id="experience-1">NDT Multi-Technician</span> <br>  <span id="experience-2">Baba Inspection Technical Services(Vishakapatnam)</span>  <br> 07/2016 - 01/2020 </li>
+                            <li><span id="experience-1">Electrician</span> <br>  <span id="experience-2">Sri Vinayaka Marine Services(Vishakapatnam)</span>  <br> 08/2015 - 01/2016 </li>
+                
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span id="experience-1">FullStack web Development</span> <br> <span id="experience-2">MASAI School - Bangalore</span> <br> 02/2022 - 10/2022</li>
+                            <li><span id="experience-1"> Diploma(Electronics and communication engneering)</span> <br> <span id="experience-2">GMR Institute of Technology(Rajam)</span> <br> 05/2012 - 05/2015 </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="contact">
+
+                        <ul>
+                            <li><span id="contact-1"><i class="fa-solid fa-envelope" ></i></span> nagarajumedida123@gmail.com</li>
+                            <li><span id="contact-1"><i class="fa-solid fa-phone"></i></i></span> +91 7306657264</li>
+                            <li><span id="contact-1"><i class="fa-solid fa-location-dot"></i></i></span> Veeraghattam,Andhrapradesh</li>
+                            <!-- <li><span id="contact-1"><a href=""><i class="fa-brands fa-linkedin"></i></a></span></li> -->
+                        </ul>
+
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Services --> 
+    <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+
+                    <div id="services-1">
+                        <i class="fa-solid fa-crop-simple"></i> 
+                        <h2>UI/UX Design</h2>
+                        <ul>
+                            <li>Interaction Desigining</li>
+                            <li>WebSite Design & Re-design</li>
+                            <li>Contentful Development</li>
+                            <li>Responsive Design</li>
+                            <li>Intractive Design</li>
+                            <li>E-commerce Development</li>
+                        </ul>
+                        <!-- <a href="#">learn more</a>   -->
+                    </div>
+
+                    <div >
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web  Design</h2>
+                        <ul id="services-1">
+                            <li>Interaction Desigining</li>
+                            <li>User Pathway</li>
+                            <li>Architecture</li>
+                            <li>Visual Designing</li>
+                            <li>Layouts and Graphics</li>
+                        </ul>
+                        <!-- <a href="#">learn more</a>   -->
+                    </div>
+
+                    <div id="services-1">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <ul>
+                            <li>Understanding </li>
+                            <li>Planning</li>
+                            <li>Research</li>
+                            <li>Specification drafting</li>
+                            <li>Bulid wireframes</li>
+                            <li>Create prototype</li>
+                            <li>Hand over a completed design to developers</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+        <!-- COntact -->
+        <div id="contact">
+            <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact me</h1>
+                            <p><i class="fa-regular fa-paper-plane"></i>Nagaraju.medida123@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 7306657264</p>
+                            <div class="social-icons">
+                                <a href=" "><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>     
+                            <a href="https://drive.google.com/file/d/1iQhFO-vgQEBTAMH4I7u4ijbo78xr-j_A/view?usp=sharing" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                             <form action="" name="submit-to-google-sheet">
+                                <input type="text" name="Name" id="" placeholder="Enter Your Name" required>
+                                <input type="text" name="email" id="" placeholder="Enter your Email" required>
+                                <textarea name="Message"  rows="6" placeholder="your message"></textarea>
+                                <button type="submit" class="btn btn2">Submit </button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="copyright">
+                        <p>Copyright <i class="fa-solid fa-heart"></i> @ Medida.Nagaraju.</p>
+            </div>
         </div>
-</div>
-</body>
+</body> 
 </html>
 <script>
-     var sidiemenu = document.getElementById("sidemenu");
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script> 
+<script>
+    var sidiemenu = document.getElementById("sidemenu");
     function openmenu(){
         sidemenu.style.right="0"
     }
     function closemenu(){
         sidemenu.style.right="-200px"
     }
+
 </script>
+<script>
+    const scriptURL = 
+    "https://script.google.com/macros/s/AKfycbw4of8k440C2B-0qynXVY0cyozaK9HnIxMGVA6aE9f2jjDrN50gb_N9sBZ2waLTye3G/exec"
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent sucessfully"
+        setTimeout(function(){
+            msg.innerHTML= ""
+        },5000);
+        form.reset();
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
