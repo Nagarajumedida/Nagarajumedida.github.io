@@ -49,7 +49,7 @@ nav ul li a::after{
         content: '';
         width: 0;
         height: 3px;
-        background: #ff004f;
+        background:#0066ff;
          position: absolute;
         left: 0;
         bottom: -6px; 
@@ -349,7 +349,7 @@ form .btn2{
             background-image: url(image/raju.jpg);
         }
         .header-text{
-            margin-top: 100%;
+            margin-top: 40%;
             font-size: 16px;
         }
         .header-text h1{
@@ -389,6 +389,13 @@ form .btn2{
         .about-col-1{
             margin-bottom: 30px;
         }
+
+        .about-col-1 img{
+            width: 80%;
+            border-radius: 50%;
+            margin-top: -10%;
+         }
+
         .about-col-2{
             font-size: 14px;
         }
