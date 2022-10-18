@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script> 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
 </head>
 <body>
+      <div class="navbar">
+        <nav>   
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#services">Services</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <!-- <li><a href="#resume">Resume</a> </li> -->
+
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </nav>
+      </div>
     <div id="header">
                  <div class="container">
-                    <nav>   
-                        <ul id="sidemenu">
-                            <li><a href="#header">Home</a> </li>
-                            <li><a href="#about">About</a> </li>
-                            <li><a href="#services">Services</a> </li>
-                            <li><a href="#portfolio">Projects</a> </li>
-                            <li><a href="#contact">Contact</a> </li>
-                            <!-- <li><a href="#resume">Resume</a> </li> -->
-
-                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
-                        </ul>
-
-                        <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
-                    </nav>
+                    
                     <div class="header-text">
                             <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
-                            <p>Fullstack Developer</p>
+                            <p>Full stack Web Developer</p>
                     </div>
-                    <a href="https://drive.google.com/file/d/1iQhFO-vgQEBTAMH4I7u4ijbo78xr-j_A/view?usp=sharing"  class="btn btn2">Resume</a>
+                    <a href="https://drive.google.com/file/d/1iQhFO-vgQEBTAMH4I7u4ijbo78xr-j_A/view?usp=sharing"  class="resume-btn">Resume</a>
 
                  </div>
     </div>
@@ -93,9 +100,8 @@
                             <li><span id="contact-1"><i class="fa-solid fa-location-dot"></i></i></span> Veeraghattam,Andhrapradesh</li>
                             <!-- <li><span id="contact-1"><a href=""><i class="fa-brands fa-linkedin"></i></a></span></li> -->
                             <div class="social-icons">
-                                <a href=""><i class="fa-brands fa-github"></i></a>
-                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://github.com/Nagarajumedida"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/m-nagaraju-raju-074a4a22a"><i class="fa-brands fa-linkedin"></i></a>
                             </div>  
                         </ul>
 
@@ -154,7 +160,88 @@
                 </div>
             </div>
     </div>
+   <!-- Projecta -->
+       <div id="projects">
 
+         
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <h1 class="projects-1">My Projects</h1>
+
+
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/J.crew.png" alt="">
+                <div class="layer">
+                    <h1>J.Crew Website</h1>
+                    <p> <span>About:</span> J.Crew is a company that supplies clothing and
+                        accessories. It offers men, women and children apparel,
+                        including swimwear, outerwear, and shoes.</p>
+                        <p><span>Tech Stack:</span> React.js | Jsx | JavaScript | ES6 features |
+                            Github | Chakra-UI | Heroku | Vercel | Axios |
+                            React-router-dom</p>
+                            <p><span>Features:</span> Sign-in | Sign-up | Home | New | Kids | Women | Cashmere | Stories | Sales |
+                                Men | Footer | cart page | Responsive Navbar.</p>
+                            <p><span>Areas of responsibility:</span> Sign-in | Sign-up | Home | New | Kids | Women |
+                                Men | Navbar |  Footer </p>
+                            <p>It's my individual project Developed within 5 days.</p>
+                        <div class="project-icons">
+                            <a href="https://github.com/Nagarajumedida/money-reason-7925/tree/main/money-reason-7925" ><i class="fa-brands fa-github"></i></a>
+                            <a href=" https://money-reason-7925-money-reason-7925-98wo.vercel.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                       
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <img src="./images/PharmEasy.png" alt="">
+                <div class="layer">
+                    <h1> PharmEasy WebSite</h1>
+                    <p> <span>About:</span> PharmEasy is an Indian e-pharmacy company that
+                        sells medicines, diagnostics and telehealth online.</p>
+                        <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify
+                            </p>
+                            <p><span>Features:</span> Sign-in | Sign-up | Home Page | Navbar | cart | Medicine | Healthcare | Surgeries | MNC | Footer.</p>
+                            <p><span>Areas of responsibility:</span>Signup and Login page using
+                                HTML,CSS and Javascript .
+                            <p>It's collaborative project Developed within fiive days, with a
+                                team of four members.</p>
+                        <div class="project-icons">
+                            <a href="https://github.com/Prashant3216/PharmEasy-clone" ><i class="fa-brands fa-github"></i></a>
+                            <a href=" https://lustrous-salamander-5df9ee.netlify.app "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <img src="./images/Naukari.png" alt="">
+                <div class="layer">
+                    <h1>Naukari Website</h1>
+                    <p> <span>About:</span>Naukri.com is a recruitment platform that provides hiring-related services to corporates/recruiters, placement agencies, and job seekers in India and overseas. It offers multiple products like Resume Database Access, Job Listings, and Response Management Tools</p>
+                        <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify
+                           </p>
+                            <p><span>Features:</span>Sign-in | Sign-up | Home Page | Navbar | Services | Jobs | Companies | Resorces | Footer </p> 
+                            <p><span>Areas of responsibility:</span> Sign-in | Sign-up | Home </p>
+                            <p>It's collaborative project Developed within fiive days, with a
+                                team of four members.</p>
+                        <div class="project-icons">
+                            <a href="https://github.com/jagatjit15/profuse-scarecrow-7713" ><i class="fa-brands fa-github"></i></a>
+                            <a href=" https://regal-fenglisu-32ab7b.netlify.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+            </div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+          </div>
+       </div>
 
         <!-- COntact -->
         <div id="contact">
@@ -170,7 +257,7 @@
                                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
                                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                             </div>     
-                            <a href="https://drive.google.com/file/d/1iQhFO-vgQEBTAMH4I7u4ijbo78xr-j_A/view?usp=sharing" download class="btn btn2">Download CV</a>
+                            <a href="images/logo.jpe" download class="btn btn2">Download CV</a>
                         </div>
                         <div class="contact-right">
                              <form action="" name="submit-to-google-sheet">
@@ -187,6 +274,11 @@
                         <p>Copyright <i class="fa-solid fa-heart"></i> @ Medida.Nagaraju.</p>
             </div>
         </div>
+     
+        <!-- Footer -->
+
+
+   
 </body> 
 </html>
 <script>
@@ -234,4 +326,32 @@
     })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+    
+ <!-- projects -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <script>
+    const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,
+    },
+    loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+
+});
   </script>
