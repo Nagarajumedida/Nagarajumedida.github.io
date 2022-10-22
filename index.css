@@ -79,6 +79,7 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis:35%
 }
+
 .about-col-1 img{
    width: 100%;
    border-radius: 15px;
@@ -89,7 +90,7 @@ nav ul li a:hover::after{
 .sub-title{
   font-size: 60px;
   font-weight: 600;
-  color: #fff;
+  color: #0066ff;
 }
 .tab-titles{
     display: flex;
