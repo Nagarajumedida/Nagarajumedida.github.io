@@ -349,6 +349,9 @@ form .btn2{
     .header-text h1{
         font-size: 45px;     
     }
+    #about{
+        margin-bottom: 50px;
+    }
  }
  @media only screen and (max-width:650px ){
     .header{
@@ -398,9 +401,9 @@ form .btn2{
         .sub-title{
             font-size: 40px;
         }
-        /* .about{
-            margin-top:auto;
-        } */
+        #about{
+            margin-bottom:50px;
+        }
         .about-col-1, .about-col-2{
             flex-basis: 100%;
         }
@@ -479,3 +482,34 @@ form .btn2{
     /* margin-top: -10px; */
     justify-content: center;
 }
+/* git hub */
+#git-satus{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#git-calender img{
+    width: 100%;
+}
+#git-graph{
+     width: 100%;
+}
+#stats{
+    width: 100%;
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+    #about{
+        margin-bottom:"-800px";
+    }
+  }
+
+
+  .github-calendar h1{
+    margin-left: 170px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .calendar{
+    width: 1000px;
+  }

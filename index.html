@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css"> 
+    <!-- <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/> -->
+<script
+src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+>
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+/>
+
+
     <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
 </head>
 <body>
@@ -218,6 +234,52 @@
                  <!-- <a href="# " class="btn">See more</a> -->
               </div>
         </div>
+
+        <!-- GITHUB INFO -->
+
+         
+           <!-- <div class="github-calendar">
+            <h1 class="sub-title">Github Info</h1>
+
+            <div class="calendar">
+
+              
+            </div>
+            </div> -->
+
+        
+        <div id="github">
+            <div class="container">
+               <h1 class="sub-title">Github calendar</h1>
+               <br>
+               <div class="calendar">
+
+                <!-- Loading stuff -->
+            </div>
+            </div>
+      </div>
+<!-- 
+      <div class="git-info">
+        <h2>github info</h2>
+      </div>  
+      <div class="EDUCATION">
+        <img class="gcal"
+        src="./images/git-calender.png"
+        alt="gitcalender" />
+      
+        </div>
+
+        <div class="EDUCATION">
+          <img class="gimg2"
+            src="https://camo.githubusercontent.com/0ce291d4b18d5b6222a3962adcf7f3d5f3fa06f515594d114bbd94e223adce3c/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d70726979616e6b617068756c6d616e74653938267468656d653d626c61636b2d69636526686964655f626f726465723d74727565267374726f6b653d30303030266261636b67726f756e643d3036304130434430"
+          alt="gitstats" />
+
+          <img class="gimg1"
+            src="https://camo.githubusercontent.com/5b2fc6a3cef0141c38b2f701ca38ae433687c51cdc9ed908442c087f7c024350/68747470733a2f2f61637469766974792d67726170682e6865726f6b756170702e636f6d2f67726170683f757365726e616d653d70726979616e6b617068756c6d616e746539382662675f636f6c6f723d30443131313726636f6c6f723d653035333937266c696e653d65303533393726706f696e743d46464646464626686964655f626f726465723d7472756526"
+            alt="" />   
+       </div> -->
+           
+
         <!-- COntact -->
         <div id="contact">
             <div class="container">
@@ -297,3 +359,19 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <!-- <script>
+    GitHubCalendar(".calendar", "Nagarajumedida");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "Nagarajumedida", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "Nagarajumedida", {
+       proxy (Nagarajumedida) {
+         return fetch(`https://your-proxy.com/github?user=${Nagarajumedida}`)
+       }
+    }).then(r => r.text())
+</script> -->
+<script>
+    new GitHubCalendar(".calendar", "Nagarajumedida");
+</script>
