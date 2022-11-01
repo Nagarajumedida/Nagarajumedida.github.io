@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css"> 
-    <!-- <link
+    <link
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/> -->
+/>
 <script
 src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
 >
@@ -25,6 +25,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
     <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
 </head>
 <body>
+ 
     <div id="header">
                  <div class="container">
                     <nav>
@@ -36,12 +37,13 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                             <li><a href="#portfolio">Projects</a> </li>
                             <li><a href="#contact">Contact</a> </li>
                             <li><a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing">Resume</a> </li>
-
+                
                             <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
                         </ul>
-
+                
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
                     </nav>
+                  
                     <div class="header-text">
                             <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
                             <p>Fullstack Developer</p>
@@ -188,7 +190,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                                 <p> <span>About:</span> J.Crew is a company that supplies clothing and
                                     accessories. It offers men, women and children apparel,
                                     including swimwear, outerwear, and shoes.</p>
-                                    <p><span>Tech Stack:</span> React.js | Jsx | JavaScript | ES6 features |
+                                    <p class="tech"><span>Tech Stack:</span> React.js | Jsx | JavaScript | ES6 features |
                                         Github | Chakra-UI | Heroku | Vercel | Axios |
                                         React-router-dom</p>
                                       <p>It's my individual project Developed within 5 days.</p>
@@ -205,7 +207,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                                 <h1>PharmEasy WebSite</h1>
                                 <p> <span>About:</span> PharmEasy is an Indian e-pharmacy company that
                                     sells medicines, diagnostics and telehealth online.</p>
-                                    <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | Github 
+                                    <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | Github 
                                         </p>
                                         <p>It's collaborative project Developed within fiive days, with a
                                             team of four members.</p>
@@ -220,7 +222,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                             <div class="layer">
                                 <h1>Naukari Website</h1>
                                 <p> <span>About:</span>Naukri.com is a recruitment platform  that connects job seekers and employers.</p>
-                                <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
+                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
                                    </p>
                                    <p>It's collaborative project Developed within fiive days, with a
                                     team of four members.</p>
@@ -236,7 +238,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                             <div class="layer">
                                 <h1>Shopbop</h1>
                                 <p> <span>About:</span>Shopbop is the global online retail destination for style inspiration and discovery, offering women and men a curated selection of ready-to-wear & accessories.</p>
-                                <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
+                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
                                    </p>
                                    <p>It's collaborative project Developed within fiive days, with a
                                     team of four members.</p>
@@ -252,7 +254,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                             <div class="layer">
                                 <h1>Shopbop</h1>
                                 <p> <span>About:</span>YouTube clone which fetch the data from the youtube api and display the videos on page.</p>
-                                <p><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
+                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
                                    </p>
                                    <p>This Project is created during the curriculum of unit-3 at Masai School.</p>
                                 <div class="project-icons">
@@ -284,7 +286,6 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                <h1 class="sub-title">Github calendar</h1>
                <br>
                <div class="calendar">
-
                 <!-- Loading stuff -->
             </div>
             </div>
@@ -398,5 +399,5 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
     }).then(r => r.text())
 </script> -->
 <script>
-    new GitHubCalendar(".calendar", "Nagarajumedida");
+    new GitHubCalendar(".calendar", "Nagarajumedida" , {responsive:true});
 </script>
