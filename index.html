@@ -2,343 +2,503 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css"> 
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-<script
-src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
->
-</script>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/19ba21573e.js" crossorigin="anonymous"></script>
 
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-rel="stylesheet"
-href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-/>
+    <!-- git graph script -->
+    <!-- <script
+    src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+    >
+    </script> -->
+        <!-- <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    /> -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
-    <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>  
 </head>
 <body>
- 
-    <div id="header">
-                 <div class="container">
-                    <nav>
-                        <img src="" alt="" class="logo">
-                        <ul id="sidemenu">
-                            <li><a href="#header">Home</a> </li>
-                            <li><a href="#about">About</a> </li>
-                            <li><a href="#services">Services</a> </li>
-                            <li><a href="#portfolio">Projects</a> </li>
-                            <li><a href="#contact">Contact</a> </li>
-                            <li><a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing">Resume</a> </li>
-                
-                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()" ></i> 
-                        </ul>
-                
-                        <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
-                    </nav>
-                  
-                    <div class="header-text">
-                            <h1>Hi, I'm <span>Medida Nagaraju</span> </h1>
-                            <p>Fullstack Developer</p>
-
-                    </div>
-                    <a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing"  class="resume-btn">Resume</a>
-
-                 </div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+        <!-- <h1>MNR</h1> -->
     </div>
-     <!-- ABOUT -->
-    <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About Me</a></li>
+                <li><a href="#project" class="menu-btn">Projects</a></li>
+                <li><a href="#skill" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing" target="_blank" class="menu-btn">Resume
+                    <!-- <i style="color: green;font-size: 20px;" class="fa-solid fa-circle-down"></i> -->
+                </a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+        <section class="about" id="home">
+            <div class="max-width">
+                <div class="about-content">
+                    <div class="column left">
                         <img src="images/raju.jpg" alt="">
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title"> About Me</h1>
-                        <p>To land on a challenging role where I can use my skills to
-                            help organisation and self growth. Skilled frontend
-                            developer, interested in obtaining a Software Developer
-                            position to work on enhancing the product experience.</p>
-                   
-                     <div class="tab-titles"> 
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links active-link" onclick="opentab('contacts')">Contact</p>
-
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <ul>
-                                <li>  <span id="experience-1">NDT Technician</span> <br> <span id="experience-2">YASREF Ltd. - Yanbu(Saudi Arabia)</span> <br> 01/2020 - 03/2020<br></li>
-                                <li><span id="experience-1">NDT Multi-Technician</span> <br>  <span id="experience-2">Baba Inspection Technical Services(Vishakapatnam)</span>  <br> 07/2016 - 01/2020 </li>
-                                <li><span id="experience-1">Electrician</span> <br>  <span id="experience-2">Sri Vinayaka Marine Services(Vishakapatnam)</span>  <br> 08/2015 - 01/2016 </li>
-                    
-                            </ul>
-                
-                        </ul>
-
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <!-- <li><span>UI/UX</span> <br> Designing Web/App interfaces</li> -->
-                            <li><span id="experience-1" >Frontend Development</span> <br><span id="experience-2">HTML5 | JavaScript | Chakra-Ui | CSS3 | Bootstrap | React</span> </li>
-                            <li><span id="experience-1">Backend Development</span> <br>  <span id="experience-2">Node JS | MOngoDB | Express | React | Redux</span></li>
-                
-                        </ul>
-                    </div>
-
-             
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span id="experience-1">FullStack web Development</span> <br> <span id="experience-2">MASAI School - Bangalore</span> <br> 02/2022 - Till date</li>
-                            <li><span id="experience-1"> Diploma(Electronics and communication engneering)</span> <br> <span id="experience-2">GMR Institute of Technology(Rajam)</span> <br> 05/2012 - 05/2015 </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="tab-contents" id="contacts">
-
-                        <ul>
-                            <li><span id="contact-1"><i class="fa-solid fa-envelope" ></i></span> nagarajumedida123@gmail.com</li>
-                            <li><span id="contact-1"><i class="fa-solid fa-phone"></i></i></span> +91 7306657264</li>
-                            <li><span id="contact-1"><i class="fa-solid fa-location-dot"></i></i></span> Veeraghattam,Andhrapradesh</li>
-                            <!-- <li><span id="contact-1"><a href=""><i class="fa-brands fa-linkedin"></i></a></span></li> -->
-                            <div class="social-icons">
-                                <a href="https://github.com/Nagarajumedida"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/m-nagaraju-raju-074a4a22a"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>  
-                        </ul>
-
-                    </div>
-
+                    <div class="column right">
+                        <p class="text-1">Hi, I'm</p><br/>
+                        <p class="text-2">Medida Nagaraju</p><br/>
+                        <!-- <p class="text">And I'm a <span class="typing"></span></p> -->
+                        <p class="text">Full Stack Developer</p>
+                        
+                        <a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing">Resume</a>
                     </div>
                 </div>
             </div>
-    </div>
-    <!-- Services --> 
-    <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
+        </section>
+
+       
+    
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="text-5">
+                    Passionate Full Stack Web Developer with
+                        a specialization in MERN stack. Skilled, collaborative
+                         and attentive developer with a drive to develop the
+                          most relevant products. Always looking forward to
+                           learn something new to strengthen skills learned.
+                </div>
+            </div>
+            <div class="tab-titles"> 
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links active-link" onclick="opentab('contacts')">Contact</p>
+
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <ul>
+                        <li>  <span id="experience-1">NDT Technician</span> <br> <span id="experience-2">YASREF Ltd. - Yanbu(Saudi Arabia)</span> <br> 01/2020 - 03/2020<br></li>
+                        <li><span id="experience-1">NDT Multi-Technician</span> <br>  <span id="experience-2">Baba Inspection Technical Services(Vishakapatnam)</span>  <br> 07/2016 - 01/2020 </li>
+                        <li><span id="experience-1">Electrician</span> <br>  <span id="experience-2">Sri Vinayaka Marine Services(Vishakapatnam)</span>  <br> 08/2015 - 01/2016 </li>
+            
+                    </ul>
         
-                    <div id="services-1">
-                        <i class="fa-solid fa-crop-simple"></i> 
-                        <h2>UI/UX Design</h2>
-                        <ul>
-                            <li>Interaction Desigining</li>
-                            <li>WebSite Design & Re-design</li>
-                            <li>Contentful Development</li>
-                            <li>Responsive Design</li>
-                            <li>Intractive Design</li>
-                            <li>E-commerce Development</li>
-                        </ul>
-                        <!-- <a href="#">learn more</a>   -->
-                    </div>
+                </ul>
 
-                    <div >
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web  Design</h2>
-                        <ul id="services-1">
-                            <li>Interaction Desigining</li>
-                            <li>User Pathway</li>
-                            <li>Architecture</li>
-                            <li>Visual Designing</li>
-                            <li>Layouts and Graphics</li>
-                        </ul>
-                        <!-- <a href="#">learn more</a>   -->
-                    </div>
+            </div>
 
-                    <div id="services-1">
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Design</h2>
-                        <ul>
-                            <li>Understanding </li>
-                            <li>Planning</li>
-                            <li>Research</li>
-                            <li>Specification drafting</li>
-                            <li>Bulid wireframes</li>
-                            <li>Create prototype</li>
-                            <li>Hand over a completed design to developers</li>
-                        </ul> 
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <!-- <li><span>UI/UX</span> <br> Designing Web/App interfaces</li> -->
+                    <li><span id="experience-1" >Frontend Development</span> <br><span id="experience-2">HTML5 | JavaScript | Chakra-Ui | CSS3 | Bootstrap | React</span> </li>
+                    <li><span id="experience-1">Backend Development</span> <br>  <span id="experience-2">Node JS | MOngoDB | Express | React | Redux</span></li>
+        
+                </ul>
+            </div>
+
+     
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span id="experience-1">FullStack web Development</span> <br> <span id="experience-2">MASAI School - Bangalore</span> <br> 02/2022 - Till date</li>
+                    <li><span id="experience-1"> Diploma(Electronics and communication engneering)</span> <br> <span id="experience-2">GMR Institute of Technology(Rajam)</span> <br> 05/2012 - 05/2015 </li>
+                </ul>
+
+            </div>
+
+            <div class="tab-contents" id="contacts">
+
+                <ul>
+                    <li><span id="contact-1"><i class="fa-solid fa-envelope" ></i></span> nagarajumedida123@gmail.com</li>
+                    <li><span id="contact-1"><i class="fa-solid fa-phone"></i></i></span> +91 7306657264</li>
+                    <li><span id="contact-1"><i class="fa-solid fa-location-dot"></i></i></span> Veeraghattam,Andhrapradesh</li>
+                    <!-- <li><span id="contact-1"><a href=""><i class="fa-brands fa-linkedin"></i></a></span></li> -->
+                    <div class="social-icons">
+                        <a href="https://github.com/Nagarajumedida"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/m-nagaraju-raju-074a4a22a"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>  
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Project section starts -->
+    <section class="projects" id="project">
+        <div class="pro-container">
+            <h1 class="title">My Projects</h1>
+            <div class="pro-list">
+                <div class="work">
+                    <img src="images/J.crew.png">
+                    <h3>J.Crew Website</h3>
+                        <p> J.Crew is a company that supplies clothing and
+                            accessories. It offers men, women and children apparel,
+                            including swimwear, outerwear, and shoes.
+                        </p>
+                        <!-- <h3>Tech Stack</h3> -->
+                  <p class="stack">Teck Stack: React.js | Jsx | JavaScript | ES6 features |
+                    Github | Chakra-UI | Heroku | Vercel | Axios |
+                    React-router-dom</p>
+                  <div class="project-icons">
+                    <a href="https://money-reason-7925-money-reason-7925-98wo.vercel.app/" target="_blank" >
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Nagarajumedida/money-reason-7925/tree/main/money-reason-7925" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+              </div>
+                </div>
+                <div class="work">
+                    <img src="images/PharmEasy.png">
+                    <h3>PharmEasy Website</h3>
+                    <p>PharmEasy is an Indian e-pharmacy company that
+                        sells medicines, diagnostics and telehealth online.
+                    </p>
+                    <!-- <h3>Tech Stack</h3> -->
+                  <p class="stack">Tech Stack: HTML| CSS | JavaScript | Netlify | Github </p>
+                  <div class="project-icons">
+                    <a href="https://lustrous-salamander-5df9ee.netlify.app " target="_blank">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Prashant3216/PharmEasy-clone" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+              </div>
+                </div>
+                <div class="work">
+                    <img src="images/Naukari.png">
+                    <h3>Naukari Website</h3>
+                      <p>Naukri.com is a recruitment platform  that connects job seekers and employers.
+                    </p>
+                    <!-- <h3>Tech Stack</h3> -->
+                  <p class="stack">Teck Stack:  HTML| CSS | JavaScript | Netlify | | Github </p>
+                  <div class="project-icons">
+                    <a href=" https://regal-fenglisu-32ab7b.netlify.app/ " target="_blank">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Nagarajumedida/shopBop.com" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+              </div>
+                </div>
+                <div class="work">
+                    <img src="images/shopbop.png">
+                    <h3>Shopbop Website</h3>
+                        <p>Shopbop is the global online retail destination for style inspiration and discovery, offering women and men a curated selection of ready-to-wear & accessories.
+                        </p>
+                        <!-- <h3>Tech Stack</h3> -->
+                  <p class="stack">Teck Stack: HTML| CSS | JavaScript | Netlify | Github </p>
+                  <div class="project-icons">
+                    <a href=" https://courageous-monstera-c1ff9d.netlify.app/ " target="_blank">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Nagarajumedida/shopBop.com" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+              </div>
+                </div>
+                <div class="work">
+                    <img src="images/Youtube.png">
+                    <h3>Youtube Website</h3>
+                        <p>YouTube clone which fetch the data from the youtube api and display the videos on page.
+                        </p>
+                        <p class="stack">Teck Stack: HTML| CSS | JavaScript | Bootstrap | Netlify | | Github </p>
+                        <div class="project-icons">
+                            <a href="https://youtubecloneapp-tau.vercel.app/" target="_blank">
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Nagarajumedida/youtubecloneapp" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                      </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/nykaa.PNG">
+                    <h3>Nykaa</h3>
+                    <p>Nykaa is An E-commerce website that sells beauty, wellness and fashion
+                      products.
+                  </p>
+                  <p class="stack">Teck Stack: HTML | CSS | JavaScript</p>
+                  <div>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">Demo
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/Madhavi-Teegireddy/Fatsecret-Clone" target="_blank">Code
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                  </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills here -->
+  <section class="know" id="skill">
+    <div class="know-container">
+        <h1 class="title">Technical Skills</h1>
+        <div class="know-list">
+            <div class="know-work" style="border-image: conic-gradient(black,black, rgb(255, 123, 0),rgba(255, 81, 0, 0.726),rgb(255, 123, 0), black, black) 3">
+                <div>
+                <img src="images/html.png">
+                </div>
+              <p class="know-stack">HTML</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, #3457D5,#3457D5,#3457D5, black, black) 3">
+                <div>
+              <img src="images/css.png">
+                </div>
+            <p class="know-stack">CSS</p>
+            </div>
+            
+            <div class="know-work" style="border-image: conic-gradient(black,black, yellow,yellow,yellow, black, black) 3">
+                <div>
+              <img src="images/javascript.png">
+                </div>
+              <p class="know-stack">JavaScript</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, skyblue,skyblue,skyblue, black, black) 3">
+                <div>
+              <img src="images/react.png">
+                </div>
+              <p class="know-stack">React</p>
+            </div>
+             
+            <div class="know-work" style="border-image: conic-gradient(black,black, lightgreen,lightgreen,lightgreen, black, black) 3">
+                <div>
+              <img src="images/node.png">
+                </div>
+              <p class="know-stack">NodeJs</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, gray,gray,gray, black, black) 3">
+                <div>
+              <img src="images/express.png">
+                </div>
+              <p class="know-stack">ExpressJs</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, lightgreen,lightgreen,lightgreen, black, black) 3">
+                <div>
+              <img src="images/mongo.png">
+                </div>
+              <p class="know-stack">Mongo-DB</p>
+            </div>
+
+            
+            <div class="know-work" style="border-image: conic-gradient(black,black, #b660cd,#b660cd,#b660cd, black, black) 3">
+                <div>
+              <img src="images/redux.png">
+                </div>
+              <p class="know-stack">Redux</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, skyblue,skyblue,skyblue, black, black) 3">
+                <div>
+              <img src="images/chakra.png">
+                </div>
+              <p class="know-stack">Chakra-UI</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, #b660cd,#b660cd,#b660cd, black, black) 3">
+                <div>
+              <img src="images/bootstrap.png">
+                </div>
+              <p class="know-stack">Bootstrap</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, gray,gray,gray, black, black) 3">
+                <div>
+              <img src="images/github.png">
+                </div>
+              <p class="know-stack">Github</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, rgb(255, 123, 0),rgb(255, 123, 0),rgb(255, 123, 0), black, black) 3">
+                <div>
+              <img src="images/git.png">
+                </div>
+              <p class="know-stack">Git</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, skyblue,skyblue,skyblue, black, black) 3">
+                <div>
+              <img src="images/vs.png">
+                </div>
+              <p class="know-stack">Vs Code</p>
+            </div>
+
+            <div class="know-work" style="border-image: conic-gradient(black,black, rgb(255, 123, 0),rgb(255, 123, 0),rgb(255, 123, 0), black, black) 3";
+            >
+                <div>
+              <img src="images/post.png">
+                </div>
+              <p class="know-stack">Postman</p>
+            </div>
+        </div>
+        <h1 class="title" style="margin-top: 30px;">Github Stats</h1>
+
+            <div class="git-list">
+                <div class="git-work">
+                    <div>
+                        <img src="https://github-readme-stats.vercel.app/api?username=Nagarajumedida&bg_color=0D1117&color=2196f3&count_private=true&show_icons=true&include_all_commits=true&hide=issues,contribs&locale=en"/>
+                    </div>
+                </div>
+                <div class="git-work">
+                    <div>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nagarajumedida&bg_color=0D1117&color=2196f3&layout=compact"/>   
                     </div>
                 </div>
             </div>
-    </div>
 
-<!-- Porttfolio -->
-        <div id="portfolio">
-              <div class="container">
-                 <h1 class="sub-title">My Projects</h1>
-                 <div class="work-list">
-                        <div class="work">
-                             <div>
-                            <img src="./images/J.crew.png" alt="">
-                             </div>
-                            <div class="layer">
-                                <h1>J.Crew Website</h1>
-                                <p> <span>About:</span> J.Crew is a company that supplies clothing and
-                                    accessories. It offers men, women and children apparel,
-                                    including swimwear, outerwear, and shoes.</p>
-                                    <p class="tech"><span>Tech Stack:</span> React.js | Jsx | JavaScript | ES6 features |
-                                        Github | Chakra-UI | Heroku | Vercel | Axios |
-                                        React-router-dom</p>
-                                      <p>It's my individual project Developed within 5 days.</p>
-
-                                    <div class="project-icons">
-                                        <a href="https://github.com/Nagarajumedida/money-reason-7925/tree/main/money-reason-7925" ><i class="fa-brands fa-github"></i></a>
-                                        <a href=" https://money-reason-7925-money-reason-7925-98wo.vercel.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="./images/PharmEasy.png" alt="">
-                            <div class="layer">
-                                <h1>PharmEasy WebSite</h1>
-                                <p> <span>About:</span> PharmEasy is an Indian e-pharmacy company that
-                                    sells medicines, diagnostics and telehealth online.</p>
-                                    <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | Github 
-                                        </p>
-                                        <p>It's collaborative project Developed within fiive days, with a
-                                            team of four members.</p>
-                                    <div class="project-icons">
-                                        <a href="https://github.com/Prashant3216/PharmEasy-clone" ><i class="fa-brands fa-github"></i></a>
-                                        <a href=" https://lustrous-salamander-5df9ee.netlify.app "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="./images/Naukari.png" alt="">
-                            <div class="layer">
-                                <h1>Naukari Website</h1>
-                                <p> <span>About:</span>Naukri.com is a recruitment platform  that connects job seekers and employers.</p>
-                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
-                                   </p>
-                                   <p>It's collaborative project Developed within fiive days, with a
-                                    team of four members.</p>
-                                <div class="project-icons">
-                                    <a href="https://github.com/Nagarajumedida/Naukari.com" ><i class="fa-brands fa-github"></i></a>
-                                    <a href=" https://regal-fenglisu-32ab7b.netlify.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="work">
-                            <img src="./images/shopbop.png" alt="">
-                            <div class="layer">
-                                <h1>Shopbop</h1>
-                                <p> <span>About:</span>Shopbop is the global online retail destination for style inspiration and discovery, offering women and men a curated selection of ready-to-wear & accessories.</p>
-                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
-                                   </p>
-                                   <p>It's collaborative project Developed within fiive days, with a
-                                    team of four members.</p>
-                                <div class="project-icons">
-                                    <a href="https://github.com/Nagarajumedida/shopBop.com" ><i class="fa-brands fa-github"></i></a>
-                                    <a href=" https://courageous-monstera-c1ff9d.netlify.app/ "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="work">
-                            <img src="./images/Youtube.png" alt="">
-                            <div class="layer">
-                                <h1>Shopbop</h1>
-                                <p> <span>About:</span>YouTube clone which fetch the data from the youtube api and display the videos on page.</p>
-                                <p class="tech"><span>Tech Stack:</span> HTML| CSS | JavaScript | Bootstrap | Netlify | | Github 
-                                   </p>
-                                   <p>This Project is created during the curriculum of unit-3 at Masai School.</p>
-                                <div class="project-icons">
-                                    <a href="https://github.com/Nagarajumedida/youtubecloneapp" ><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://youtubecloneapp-tau.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                 </div>
-                 <!-- <a href="# " class="btn">See more</a> -->
-              </div>
-        </div>
-
-        <!-- GITHUB INFO -->
-
-         
-           <!-- <div class="github-calendar">
-            <h1 class="sub-title">Github Info</h1>
-
-            <div class="calendar">
-
-              
-            </div>
+            <!-- <div class="gr-list">
+                <div class="gr-work-st">
+                    <div>
+                        <a href="https://github.com/madhavi-teegireddy/github-readme-streak-stats">
+                            <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="madhavi-teegireddy's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=madhavi-teegireddy&theme=black-ice&stroke=0000&background=060A0CD0&layout=compact"/>
+                        </a>
+                    </div>
+                </div>
             </div> -->
 
-        
-        <div id="github">
-            <div class="container">
-               <h1 class="sub-title">Github calendar</h1>
-               <br>
-               <div class="calendar">
+              <div  class="calendar">
                 <!-- Loading stuff -->
+                Loading the data just for you.
             </div>
-            </div>
-      </div>
-
-      <!-- <div class="git-info">
-        <h2>github info</h2>
-      </div>  
-    
-        <div class="EDUCATION">
-          <img class="gimg2"
-            src="https://camo.githubusercontent.com/0ce291d4b18d5b6222a3962adcf7f3d5f3fa06f515594d114bbd94e223adce3c/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d70726979616e6b617068756c6d616e74653938267468656d653d626c61636b2d69636526686964655f626f726465723d74727565267374726f6b653d30303030266261636b67726f756e643d3036304130434430"
-          alt="gitstats" />
-
-          <img class="gimg1"
-            src="https://camo.githubusercontent.com/5b2fc6a3cef0141c38b2f701ca38ae433687c51cdc9ed908442c087f7c024350/68747470733a2f2f61637469766974792d67726170682e6865726f6b756170702e636f6d2f67726170683f757365726e616d653d70726979616e6b617068756c6d616e746539382662675f636f6c6f723d30443131313726636f6c6f723d653035333937266c696e653d65303533393726706f696e743d46464646464626686964655f626f726465723d7472756526"
-            alt="" />   
-       </div> -->
-           
-
-        <!-- COntact -->
-        <div id="contact">
-            <div class="container">
-                    <div class="row">
-                        <div class="contact-left">
-                            <h1 class="sub-title">Contact me</h1>
-                            <p><i class="fa-regular fa-paper-plane"></i>Nagaraju.medida123@gmail.com</p>
-                            <p><i class="fa-solid fa-square-phone"></i> 7306657264</p>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/profile.php?id=100007467438026"><i class="fa-brands fa-facebook"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            </div>     
-                            <a href="https://drive.google.com/file/d/1LYZ6RFpCt2AQ_v59XF574h4BC5BVyowR/view?usp=sharing" download class="btn btn2">Download CV</a>
-                        </div>
-                        <div class="contact-right">
-                             <form action="" name="submit-to-google-sheet">
-                                <input type="text" name="Name" id="" placeholder="Enter Your Name" required>
-                                <input type="text" name="email" id="" placeholder="Enter your Email" required>
-                                <textarea name="Message"  rows="6" placeholder="your message"></textarea>
-                                <button type="submit" class="btn btn2">Submit </button>
-                            </form>
-                            <span id="msg"></span>
-                        </div>
+          
+            <div class="gr-list">
+                <div class="gr-work" >
+                    <div>
+                        <img alt="Nagarajumedida"
+                        src="https://activity-graph.herokuapp.com/graph?username=Nagarajumedida&bg_color=0D1117&color=2196f3&line=2196f3&point=FFFFFF&layout=compact" />
                     </div>
+
+                </div>
+
             </div>
-            <div class="copyright">
-                        <p>Copyright <i class="fa-solid fa-heart"></i> @ Medida.Nagaraju.</p>
+    </div>
+</section>
+
+     <!-- contact section start -->
+     <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <a href=" mailto:nagarajuumedida123@gmail.com">   <i class="fas fa-envelope"></i> </a>
+                            <div class="info">
+                                <div class="head"></div>
+                                <div class="sub-title">  <a href="mailto:nagarajuumedida123@gmail.com"> nagarajumedida123@gmail.com </a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a href="https://www.linkedin.com/in/m-nagaraju-raju-074a4a22a" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                            <div class="info">
+                                <!-- <div class="head">Address</div> -->
+                                <div class="sub-title">  <a href="https://www.linkedin.com/in/m-nagaraju-raju-074a4a22a" target="_blank">Linkedin</a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a href="https://github.com/Nagarajumedida" target="_blank"> <i class="fab fa-github"></i> </a>
+                            <div class="info">
+                                <!-- <div class="head">Email</div> -->
+                                <div class="sub-title"> <a href="https://github.com/Nagarajumedida" target="_blank" >GitHub</a> </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <i class="fas fa-phone-alt"></i>
+                           <div class="info">
+                               <div class="head">Email</div>
+                               <div class="sub-title"> +91 </div>
+                           </div>
+                       </div> -->
+
+                        
+
+                    </div>
+                                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form id="myForm">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="user_name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-</body> 
-</html>
+    </section>
+   
+
+
+     <!-- footer section start -->
+     <footer>
+      <span>Created By Medida Nagaraju <a href="">❤</a> | <span class="far fa-copyright"></span> @2022</span>
+  </footer>
+
+  <script src="index.js"></script>
+  <script>
+     document
+      .getElementById("myForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        const serviceID = "service_h5mwdxf";
+        const templateID = "template_jmq1kpa";
+        // send the email here
+        emailjs.sendForm(serviceID, templateID, this).then(
+          (response) => {
+            console.log("Email Sent Successfully !", response.status, response.text);
+            alert("Email Sent Successfully !");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            alert("FAILED...", error);
+          }
+        );
+      });
+    </script>
+
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -355,49 +515,25 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
         document.getElementById(tabname).classList.add("active-tab")
     }
 </script> 
-<script>
-    var sidiemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0"
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px"
-    }
 
-</script>
-<script>
-    const scriptURL = 
-    "https://script.google.com/macros/s/AKfycbw4of8k440C2B-0qynXVY0cyozaK9HnIxMGVA6aE9f2jjDrN50gb_N9sBZ2waLTye3G/exec"
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-    
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent sucessfully"
-        setTimeout(function(){
-            msg.innerHTML= ""
-        },5000);
-        form.reset();
-    })
-        .catch(error => console.error('Error!', error.message))
-    })
+    <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">      (function () {
+            emailjs.init("794kzP2GV8IBa0UGX");
+          })();
   </script>
-  <!-- <script>
-    GitHubCalendar(".calendar", "Nagarajumedida");
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "Nagarajumedida", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "Nagarajumedida", {
-       proxy (Nagarajumedida) {
-         return fetch(`https://your-proxy.com/github?user=${Nagarajumedida}`)
-       }
-    }).then(r => r.text())
-</script> -->
-<script>
-    new GitHubCalendar(".calendar", "Nagarajumedida" , {responsive:true});
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
+<script>
+
+  GitHubCalendar(".calendar", "Nagarajumedida", { responsive: true });
+
+</script>
+
+
+</body>
+</html>
