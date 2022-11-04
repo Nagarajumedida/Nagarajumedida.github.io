@@ -335,7 +335,7 @@ section .title::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
