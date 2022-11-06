@@ -124,12 +124,12 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+/* .navbar .menu li a:hover{
     color: #3457D5;
-}
-.navbar.sticky .menu li a:hover{
+} */
+/* .navbar.sticky .menu li a:hover{
     color:#0000ff;
-}
+} */
 
 /* menu btn styling */
 .menu-btn{
@@ -297,7 +297,7 @@ section .title::after{
 }
 
 .about .title{
-        color:white;
+        color:#0000ff;
         font-size: 30px;
 }
 .about .about-content .right a{
@@ -318,6 +318,7 @@ section .title::after{
 }
 .about h2{
     color:white;
+    /* font-size: 40px; */
 }
 .about-content .text-5{
     width:70%;
@@ -428,7 +429,7 @@ section .title::after{
     height: auto;
 }
 .pro-container .title{
-        color:white;
+        color:#0000ff;
         font-size: 30px;
 }
 .stack{
@@ -444,7 +445,8 @@ section .title::after{
     overflow: hidden;
     border-style: solid;
     border-width: 3px;
-    border-image: conic-gradient(black, black, black, blue, black, black, black) 1;
+    /* border-image: conic-gradient(black, black, black, blue, black, black, black) 1; */
+    border-color: #7272ee;
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -509,7 +511,7 @@ section .title::after{
     background-color:black;
 }
 .know-container .title{
-        color:white;
+        color:#0000ff;
         font-size: 30px;
 }
 
@@ -665,13 +667,7 @@ section .title::after{
     background:  #0066ff;
     transform:translateY(-10px) ;
 }
-/* :root {
-    --color-calendar-graph-day-bg: #dddbdb;
-    --color-calendar-graph-day-L1-bg: #39dd34;
-    --color-calendar-graph-day-L2-bg: #45a045;
-    --color-calendar-graph-day-L3-bg: #047526;
-    --color-calendar-graph-day-L4-bg: #0a4208;
-  } */
+
 
   :root {
     --color-calendar-graph-day-bg: #dddbdb;
@@ -879,7 +875,7 @@ section .title::after{
 }
 
 .contact .title{
-    color:white;
+    color:#0000ff;
     font-size: 30px;
 }
 
@@ -933,7 +929,8 @@ section .title::after{
     margin-right: 10px;
 }
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea
+{
     height: 100%;
     width: 100%;
     border: 1px solid gray;
@@ -997,6 +994,12 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+#msg{
+    color: #61b752;
+    margin-top: -3 0px;
+    display: block;
+ }
 
 
 /* responsive media query start */
@@ -1252,20 +1255,6 @@ footer span a:hover{
 }
 
 
-
-
-/* .sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-      font-weight:100;
-  
-  } */
-
-
-
-
-
    @media only screen and (max-width:700px ){
     
     .tab-links{
@@ -1275,4 +1264,3 @@ footer span a:hover{
    
 }
 
- 
