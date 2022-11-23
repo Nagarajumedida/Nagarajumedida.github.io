@@ -503,6 +503,9 @@ section .title::after{
 .work div a{
     font-size: 20px;
 }
+.project-icons{
+    padding-bottom: 10px;
+}
 
 
 
@@ -724,7 +727,7 @@ section .title::after{
       padding: 0 14px 10px 0;
       display: inline-block;
       float: right;
-      float: right;
+      
   }
   
   .contrib-legend .legend {
